@@ -76,6 +76,14 @@ export type CustomTextRenderer = (
   props: { pageIndex: number; pageNumber: number; itemIndex: number } & TextItem,
 ) => string;
 
+export type CustomTextLayerRenderer = (props: {
+  layerChildren: NodeListOf<Element>;
+  layerElement: HTMLDivElement;
+  pageIndex: number;
+  pageNumber: number;
+  textContentItems: TextContent['items'];
+}) => void;
+
 export type DocumentCallback = PDFDocumentProxy;
 
 export type File = string | ArrayBuffer | Blob | Source | null;
@@ -144,6 +152,7 @@ export type DocumentContextType = {
 export type PageContextType = {
   _className?: string;
   canvasBackground?: string;
+  customTextLayerRenderer?: CustomTextLayerRenderer;
   customTextRenderer?: CustomTextRenderer;
   devicePixelRatio?: number;
   onGetAnnotationsError?: OnGetAnnotationsError;

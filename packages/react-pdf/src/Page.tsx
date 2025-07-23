@@ -25,6 +25,7 @@ import type { EventProps } from 'make-event-props';
 import type {
   ClassName,
   CustomRenderer,
+  CustomTextLayerRenderer,
   CustomTextRenderer,
   NodeOrRenderer,
   OnGetAnnotationsError,
@@ -78,6 +79,8 @@ export type PageProps = {
    * @example MyCustomRenderer
    */
   customRenderer?: CustomRenderer;
+  
+  customTextLayerRenderer?: CustomTextLayerRenderer;
   /**
    * Function that customizes how a text layer is rendered.
    *
@@ -312,6 +315,7 @@ export default function Page(props: PageProps): React.ReactElement {
     children,
     className,
     customRenderer: CustomRenderer,
+    customTextLayerRenderer,
     customTextRenderer,
     devicePixelRatio,
     error = 'Failed to load the page.',
@@ -494,6 +498,7 @@ export default function Page(props: PageProps): React.ReactElement {
         ? {
             _className,
             canvasBackground,
+            customTextLayerRenderer,
             customTextRenderer,
             devicePixelRatio,
             onGetAnnotationsError: onGetAnnotationsErrorProps,
@@ -520,6 +525,7 @@ export default function Page(props: PageProps): React.ReactElement {
     [
       _className,
       canvasBackground,
+      customTextLayerRenderer,
       customTextRenderer,
       devicePixelRatio,
       onGetAnnotationsErrorProps,
