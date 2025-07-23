@@ -1,5 +1,5 @@
 {
-  "name": "react-pdf",
+  "name": "@getambush/react-pdf",
   "version": "10.0.1",
   "description": "Display PDFs in your React app as easily as if they were images.",
   "type": "module",
