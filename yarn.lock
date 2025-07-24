@@ -492,6 +492,44 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@getambush/react-pdf@workspace:packages/react-pdf, react-pdf@workspace:packages/react-pdf":
+  version: 0.0.0-use.local
+  resolution: "@getambush/react-pdf@workspace:packages/react-pdf"
+  dependencies:
+    "@biomejs/biome": "npm:2.0.0"
+    "@testing-library/dom": "npm:^10.0.0"
+    "@testing-library/jest-dom": "npm:^6.0.0"
+    "@testing-library/react": "npm:^16.0.0"
+    "@types/node": "npm:*"
+    "@types/react": "npm:*"
+    "@types/react-dom": "npm:*"
+    "@types/warning": "npm:^3.0.0"
+    "@vitest/browser": "npm:^3.2.3"
+    clsx: "npm:^2.0.0"
+    cpy-cli: "npm:^5.0.0"
+    dequal: "npm:^2.0.3"
+    make-cancellable-promise: "npm:^2.0.0"
+    make-event-props: "npm:^2.0.0"
+    merge-refs: "npm:^2.0.0"
+    pdfjs-dist: "npm:5.3.93"
+    playwright: "npm:^1.51.1"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    tiny-invariant: "npm:^1.0.0"
+    typescript: "npm:^5.5.2"
+    vitest: "npm:^3.2.3"
+    vitest-browser-react: "npm:^0.2.0"
+    warning: "npm:^4.0.0"
+  peerDependencies:
+    "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  languageName: unknown
+  linkType: soft
+
 "@isaacs/cliui@npm:^8.0.2":
   version: 8.0.2
   resolution: "@isaacs/cliui@npm:8.0.2"
@@ -2680,44 +2718,6 @@ __metadata:
   resolution: "react-pdf-monorepo@workspace:."
   dependencies:
     husky: "npm:^9.0.0"
-  languageName: unknown
-  linkType: soft
-
-"react-pdf@workspace:packages/react-pdf":
-  version: 0.0.0-use.local
-  resolution: "react-pdf@workspace:packages/react-pdf"
-  dependencies:
-    "@biomejs/biome": "npm:2.0.0"
-    "@testing-library/dom": "npm:^10.0.0"
-    "@testing-library/jest-dom": "npm:^6.0.0"
-    "@testing-library/react": "npm:^16.0.0"
-    "@types/node": "npm:*"
-    "@types/react": "npm:*"
-    "@types/react-dom": "npm:*"
-    "@types/warning": "npm:^3.0.0"
-    "@vitest/browser": "npm:^3.2.3"
-    clsx: "npm:^2.0.0"
-    cpy-cli: "npm:^5.0.0"
-    dequal: "npm:^2.0.3"
-    make-cancellable-promise: "npm:^2.0.0"
-    make-event-props: "npm:^2.0.0"
-    merge-refs: "npm:^2.0.0"
-    pdfjs-dist: "npm:5.3.93"
-    playwright: "npm:^1.51.1"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    tiny-invariant: "npm:^1.0.0"
-    typescript: "npm:^5.5.2"
-    vitest: "npm:^3.2.3"
-    vitest-browser-react: "npm:^0.2.0"
-    warning: "npm:^4.0.0"
-  peerDependencies:
-    "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
   languageName: unknown
   linkType: soft
 

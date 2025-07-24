@@ -1,6 +1,6 @@
 {
   "name": "@getambush/react-pdf",
-  "version": "10.0.1",
+  "version": "10.0.2",
   "description": "Display PDFs in your React app as easily as if they were images.",
   "type": "module",
   "sideEffects": [
@@ -75,8 +75,7 @@
     }
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "files": [
     "dist",
@@ -84,7 +83,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wojtekmaj/react-pdf.git",
+    "url": "git+https://github.com/GetAmbush/react-pdf.git",
     "directory": "packages/react-pdf"
   },
   "funding": "https://github.com/wojtekmaj/react-pdf?sponsor=1"
